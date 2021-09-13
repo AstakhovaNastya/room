@@ -1,0 +1,101 @@
+.offer-section {
+	margin-bottom: 25px;
+	@media(min-width: $tablet-width) {
+		margin-bottom: 100px;
+	}
+	@media(min-width: $desktop-width) {
+		margin-bottom: 215px;
+	}
+}
+
+.offer-box {
+		margin-bottom: 50px;
+	@media(min-width: $tablet-width) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.title-box {
+	@media(min-width: $tablet-width) {
+		flex-basis: 39%;
+		max-width: 39%;
+	}
+	h2 {
+		font-size: 28px;
+		font-weight: inherit;
+		line-height: 40px;
+		color: $title-color;
+		padding-bottom: 10px;
+		@media(min-width: $tablet-width) {
+			font-size: 40px;
+			line-height: 58px;
+		}
+		@media(min-width: $desktop-width) {
+			font-size: 48px;
+		}
+	}
+}
+
+.description-box {
+	font-size: 24px;
+	@media(min-width: $tablet-width) {
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+	@media(min-width: $desktop-width) {
+		flex-basis: 45%;
+		max-width: 45%;
+	}
+	p {
+		line-height: 30px;
+		@media(min-width: $tablet-width) {
+		line-height: 40px;
+	}
+	}
+}
+
+.rooms-list {
+	@media(min-width: $tablet-width) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -12px;
+	}
+}
+
+.room-item {
+	padding-bottom: 32px;
+	max-width: 100%;
+	@media(min-width: $tablet-width) {
+		flex-basis: 50%;
+		max-width: 50%;
+		padding: 0 12px 32px;
+	}
+	&:hover {
+		.room-title {
+			color: $main-text-color;
+		}
+	}
+}
+
+.room-picture {
+		max-width: 100%;
+		height: auto;
+		padding-bottom: 9px;
+	@media(min-width: $tablet-width) {
+	}
+}
+
+.room-title {
+		font-size: 18px;
+		font-weight: inherit;
+		line-height: 28px;
+		color: $title-color;
+	@media(min-width: $tablet-width) {
+	}
+	@media(min-width: $desktop-width) {
+		font-size: 23px;
+	}
+}
+

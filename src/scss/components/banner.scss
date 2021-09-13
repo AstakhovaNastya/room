@@ -1,0 +1,11 @@
+.banner {
+	margin: 30px 0;
+	max-width: 1327px;
+	@media(min-width: $tablet-width) {
+		margin: 40px 0 88px;
+	}
+	img {
+		height: auto;
+		max-width: 100%;
+	}
+}

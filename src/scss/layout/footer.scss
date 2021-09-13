@@ -1,0 +1,281 @@
+.page-footer {
+	background-color: $footer-bg;
+	position: relative;
+	padding: 50px 50px 51px;
+	@media(min-width: $tablet-width) {
+		padding: 70px 70px 51px;
+	}
+	@media(min-width: $desktop-width) {
+		padding: 97px 120px 51px;
+	}
+}
+
+.page-footer-wrap {
+	@media(min-width: $tablet-width) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	@media(min-width: $desktop-width) {
+		flex-wrap: nowrap;
+	}
+}
+
+.footer-logo-wrap {
+	padding:0 0 20px;
+
+	@media(min-width: $tablet-width) {
+		padding: 0 15px 20px 20px;
+		flex-basis: 20%;
+		max-width: 20%;
+	}
+	@media(min-width: $desktop-width) {
+		padding: 0 34px 20px 55px;
+		flex-basis: auto;
+		max-width: none;
+	}
+}
+
+.footer-menu-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	@media(min-width: $tablet-width) {
+		flex-basis: 60%;
+		max-width: 60%;
+	}
+	@media(min-width: $desktop-width) {
+		flex-basis: auto;
+		max-width: none;
+	}
+}
+
+.footer-menu-heading,
+.social-heading {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16.4px;
+	letter-spacing: 0.5px;
+	color: $secondary-text-color;
+	margin-bottom: 17px;
+
+}
+
+
+.footer-menu-list {
+	padding-bottom: 20px;
+	flex-basis: 50%;
+	max-width: 50%;
+	@media(min-width: $tablet-width) {
+		padding: 0 15px 20px;
+	}
+	@media(min-width: $desktop-width) {
+		padding: 0 35px 20px;
+	}
+	li {
+		font-size: 14px;
+		line-height: 16.4px;
+		letter-spacing: 0.5px;
+		color: $secondary-text-color;
+		margin-bottom: 4px;
+		a {
+			color: $secondary-text-color;
+			&:hover {
+				color: $main-text-color;
+			}
+		}
+		
+	}
+}
+
+.social-wrap {
+	padding-bottom: 20px;
+	@media(min-width: $tablet-width) {
+		padding: 0 15px 20px 0;
+		flex-basis: 20%;
+		max-width: 20%;
+	}
+	@media(min-width: $desktop-width) {
+		padding: 0 34px 20px;
+		flex-basis: auto;
+		max-width: none;
+	}
+}
+
+.social-list {
+	display: flex;
+	margin: 0 -6px;
+	li {
+		padding: 0 6px;
+	}
+}
+
+.icon-social {
+	color: $main-text-color;
+	font-size: 20px;
+}
+
+.icon-social:hover {
+	color: $secondary-text-color;
+}
+
+.icon-instagram:hover {
+	background-color: $secondary-text-color;
+}
+
+.icon-instagram {
+	padding: 3px;
+	border-radius: 15%;
+	font-size: 15px;
+	color: $footer-bg;
+	background-color: $main-text-color;
+}
+
+.sign-up-form {
+	@media(min-width: $tablet-width) {
+		max-width: 361px;
+		margin: 0 auto;
+	}
+	@media(min-width: $desktop-width) {
+		padding-left: 34px;
+		margin: 0
+	}
+	.jcf-select {
+		&:hover {
+			color: $secondary-text-color;
+		}
+	}
+	h5 {
+		font-size: 13px;
+		line-height: 21px;
+		letter-spacing: 0.5px;
+		font-weight: 400;
+		color: $secondary-text-color;
+		margin-bottom: 17px;
+	}
+	.subtitle {
+		font-size: 14px;
+		line-height: 16.4px;
+		font-weight: 400;
+		color: $secondary-text-color;
+		margin-bottom: 30px;
+	}
+	.info {
+		background-color: transparent;
+		border: 1px solid rgb(255,255,255, 0.4);
+		border-radius: 2px;
+		padding: 10px;
+		width: 100%;
+		height: 54px;
+		color: $secondary-text-color;
+	}
+	.select {
+		background-color: transparent;
+		border: none;
+		color: $main-text-color;
+		font-size: 14px;
+		line-height: 21px;
+	}
+}
+
+.info-wrap {
+	margin: 30px 0 16px;
+}
+
+.select-wrap {
+	margin-bottom: 56px;
+	text-align: end;
+	cursor: pointer;
+}
+
+.check-input {
+	// -webkit-appearance: none;
+	// appearance: none;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	// clip: rect(0 0 0 0);
+	&:checked {
+		+ .check-box {
+			&:before {
+				opacity: 1;
+			}
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.check {
+	position: relative;
+	display: inline-block;
+	padding-left: 47px;
+	font-size: 11px;
+	line-height: 13px;
+	letter-spacing: 2.4px;
+	text-transform: uppercase;
+}
+
+.check-box:before {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 12px;
+	background-color: $main-text-color;
+	top: 7px;
+	left: 6px;
+	transform: rotate(-33deg);
+	opacity: 0;
+}
+
+.check-box:after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 18px;
+	background-color: $main-text-color;
+	top: 2px;
+	right: 8px;
+	transform: rotate(33deg);
+	opacity: 0;
+}
+
+.check-box {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	width: 26px;
+	height: 26px;
+	background-color: #2B2B2B;
+}
+
+.button-sign-up-wrap {
+	text-align: right;
+}
+
+.button-sign-up {
+	border: none;
+	background-color: transparent;
+	color: $secondary-text-color;
+	font-size: 14px;
+	line-height: 60px;
+	letter-spacing: 2.3px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.return {
+	position: absolute;
+	bottom: 100px;
+	right: 0;
+	transform: rotate(-90deg);
+	font-size: 11px;
+	line-height: 13px;
+	letter-spacing: 2.4px;
+	cursor: pointer;
+	text-transform: uppercase;
+	a {
+		color: $secondary-text-color;
+	}
+}

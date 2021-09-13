@@ -1,0 +1,73 @@
+.brands-section {
+	margin-bottom: 30px;
+	@media(min-width: $tablet-width) {
+		margin-bottom: 190px;
+	}
+}
+
+.center-box {
+	text-align: center;
+	margin-bottom: 80px;
+	@media(min-width: $tablet-width) {
+		margin-bottom: 125px;
+	}
+	h2 {
+		font-size: 28px;
+		line-height: 48px;
+		color: $title-color;
+		font-weight: 400;
+		margin-bottom: 27px;
+		@media(min-width: $tablet-width) {
+		font-size: 40px;
+		}
+		@media(min-width: $desktop-width) {
+		font-size: 48px;
+		}
+	}
+	h4 {
+		font-size: 18px;
+		line-height: 36px;
+		color: #4A4A4A;
+		@media(min-width: $tablet-width) {
+		font-size: 24px;
+		}
+	}
+}
+
+.brands-box {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	@media(min-width: $tablet-width) {
+		margin: 0 -30px;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	li {
+		flex-basis: 50%;
+		max-width: 50%;
+		padding: 0 25px 49px;
+		@media(min-width: 568px) {
+			flex-basis: 33.3%;
+			max-width: 33.3%;
+			padding: 0 25px 49px;
+		}
+		@media(min-width: $tablet-width) {
+			flex-basis: 25%;
+			max-width: 25%;
+			padding: 0 25px 49px;
+		}
+		@media(min-width: $desktop-width) {
+			flex-basis: 16.66%;
+			max-width: 16.66%;
+			padding: 0 30px 49px;
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
+

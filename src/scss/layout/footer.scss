@@ -1,37 +1,37 @@
 .page-footer {
 	background-color: $footer-bg;
 	position: relative;
-	padding: 50px 50px 51px;
+	
+}
+
+.page-footer-wrap {
+	padding: 50px 25px 51px;;
 	@media(min-width: $tablet-width) {
-		padding: 70px 70px 51px;
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 70px;
 	}
-	@media(min-width: $desktop-width) {
+	@media(min-width: $footer-desktop-width) {
+		flex-wrap: nowrap;
 		padding: 97px 120px 51px;
 	}
 }
 
-.page-footer-wrap {
-	@media(min-width: $tablet-width) {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	@media(min-width: $desktop-width) {
-		flex-wrap: nowrap;
-	}
-}
-
 .footer-logo-wrap {
-	padding:0 0 20px;
-
+	padding-bottom: 20px;
 	@media(min-width: $tablet-width) {
-		padding: 0 15px 20px 20px;
-		flex-basis: 20%;
+		padding-right:15px;
+		flex: 0 0 20%;
 		max-width: 20%;
 	}
-	@media(min-width: $desktop-width) {
-		padding: 0 34px 20px 55px;
-		flex-basis: auto;
-		max-width: none;
+	@media(min-width: $footer-desktop-width) {
+		padding-right: 34px;
+		flex-basis: 121px;
+		max-width: 121px;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
 	}
 }
 
@@ -39,12 +39,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	@media(min-width: $tablet-width) {
-		flex-basis: 60%;
-		max-width: 60%;
+		margin: 0 -15px;
+		max-width: 80%;
+		flex-basis: 80%;
 	}
-	@media(min-width: $desktop-width) {
-		flex-basis: auto;
-		max-width: none;
+	@media(min-width: $footer-desktop-width) {
+		margin: 0;
+		max-width: 410px;
+		flex: 0 0 410px;
 	}
 }
 
@@ -66,9 +68,13 @@
 	max-width: 50%;
 	@media(min-width: $tablet-width) {
 		padding: 0 15px 20px;
+		flex-basis: 25%;
+		max-width: 25%;
 	}
-	@media(min-width: $desktop-width) {
+	@media(min-width: $footer-desktop-width) {
 		padding: 0 35px 20px;
+		flex-basis: 50%;
+		max-width: 50%;
 	}
 	li {
 		font-size: 14px;
@@ -90,10 +96,10 @@
 	padding-bottom: 20px;
 	@media(min-width: $tablet-width) {
 		padding: 0 15px 20px 0;
-		flex-basis: 20%;
-		max-width: 20%;
+		flex-basis: 30%;
+		max-width: 30%;
 	}
-	@media(min-width: $desktop-width) {
+	@media(min-width: $footer-desktop-width) {
 		padding: 0 34px 20px;
 		flex-basis: auto;
 		max-width: none;
@@ -131,12 +137,13 @@
 
 .sign-up-form {
 	@media(min-width: $tablet-width) {
-		max-width: 361px;
-		margin: 0 auto;
+		max-width: 70%;
+		flex-basis: 70%;
 	}
-	@media(min-width: $desktop-width) {
+	@media(min-width: $footer-desktop-width) {
 		padding-left: 34px;
-		margin: 0
+		flex-basis: auto;
+		max-width: none;
 	}
 	.jcf-select {
 		&:hover {
@@ -187,13 +194,11 @@
 }
 
 .check-input {
-	// -webkit-appearance: none;
-	// appearance: none;
 	position: absolute;
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
-	// clip: rect(0 0 0 0);
+	clip: rect(0 0 0 0);
 	&:checked {
 		+ .check-box {
 			&:before {
@@ -268,13 +273,16 @@
 .return {
 	position: absolute;
 	bottom: 100px;
-	right: 0;
+	right: -50px;
 	transform: rotate(-90deg);
 	font-size: 11px;
 	line-height: 13px;
 	letter-spacing: 2.4px;
 	cursor: pointer;
 	text-transform: uppercase;
+	@media(min-width: $footer-desktop-width) {
+		right: 0;
+	}
 	a {
 		color: $secondary-text-color;
 	}

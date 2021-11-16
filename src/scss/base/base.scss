@@ -27,6 +27,7 @@ ul {
 }
 
 a {
+	color: #46856E;
 	text-decoration: none;
 }
 
@@ -40,9 +41,18 @@ h2, h4 {
 }
 
 h2 {
-	font-size: 48px;
+	font-size: 28px;
+	@media(min-width: $tablet-width) {
+		font-size: 40px;
+	}
+	@media(min-width: $desktop-width) {
+		font-size: 48px;
+	}
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 18px;
+	@media(min-width: $tablet-width) {
+		font-size: 24px;
+	}
 }

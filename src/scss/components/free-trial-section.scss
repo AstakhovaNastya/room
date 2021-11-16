@@ -9,13 +9,11 @@
 }
 
 .free-trial-title {
-	font-size: 25px;
 	font-weight: 400;
 	line-height: 24px;
 	color: $secondary-title-color;
 	margin-bottom: 65px;
 	@media(min-width: $tablet-width) {
-		font-size: 40px;
 		line-height: 50.6px;
 	}
 	@media(min-width: $desktop-width) {

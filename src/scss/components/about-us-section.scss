@@ -30,13 +30,19 @@
 
 .about-us-item {
 	display: flex;
-	
 	@media(max-width: $tablet-width - 1) {
 		flex-direction: column;
 	}
 	@media(min-width: $tablet-width) {
 		align-items: center;
 		margin-bottom: 64px;
+	}
+	&:nth-child(2n+1) {
+		.about-us-box {
+			@media(min-width: $tablet-width) {
+				order: 2;
+			}
+		}
 	}
 }
 
@@ -53,12 +59,6 @@
 	}
 }
 
-
-.about-us-text {
-	@media(max-width: $tablet-width - 1) {
-		order: 2;
-	}
-}
 
 .about-us-img {
 	max-width: 100%;
